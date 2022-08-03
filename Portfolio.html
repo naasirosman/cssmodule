@@ -2,22 +2,126 @@
 <html>
 <head>
 <title>I'm Naasir</title>
-</head>
+<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<style style="intro">
-    body {
-  font-family: Arial, sans-serif;
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+</style>
+</head>
+<body>
+  <style>
+  :root {
+      --gray: #1b1c1c;
+      --purple: #ae95cf;
+      --white: #f7f8fa;
+      --font-size: 1.3rem;
+  }
+  /* border box model: https://css-tricks.com/box-sizing/ 
+  html {
+      box-sizing: border-box;
+  }
+  *,
+  *::before,
+  *::after {
+      box-sizing: inherit;
+  }
+generic styles for the page */
+  body {
+      padding: 0;
+      margin: 0;
+      background-color: var(--gray);
+      color: var(--white);
+      font-size: var(--font-size);
+  }
+  .navbar {
+    display: block;
+    height: 5rem;
+  }
+  .navbar span {display: inline-block;
+  font-size: 100rem;}
+  h1 {
+      margin: 0;
+  }
+  a {
+      color: var(--purple);
+  }
+
+  a:hover {
+      color: var(--purple);
+      text-decoration: none;
+  }
+  /* intro styles */
+  #intro {
+      padding-bottom: 10rem;
+      text-align: center;
+  }
+
+  #intro p {
+      font-size: 1rem;
+      line-height: 1.5;
+  }
+
+  #intro .name {
+      font-size: 1rem;
+  }
+
+  .name span {
+
+      font-size: 5rem;
+      color: var(--white);
+      display: block;
+  }
+  .name span:hover {
+      color: var(--purple);
+      text-decoration: wavy;
+      transition-duration: 0.2s;
+  }
+
+  #intro h2 {
+      font-size: 4rem;
+  }
+
+.fa {
+  padding: 10px;
+  margin-top: 50px;
+  font-size: 100px;
+  width: 200px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 0%;
 }
 
-</style>
-<body>
-   <section> Hi, <span> I'm Naasir </span>
-     I create the front end of websites, user experiences, user interfaces, digital experiences, etc.
-    
-    I'm a student developer learning HTML, CSS and JavaScript.
-    
-    Currently, I'm at <a href="https://www.zoro.co.uk/">Zoro UK.</a> 
-</section>
+.fa:hover {color: #ae95cf;}
+
+
+
+
+body svg {
+  display: grid;
+  height: 100vh;
+  margin: 0;
+  place-items: center center;
+}
+
+  </style>
+ <section class="navbar"> <span><h1></></h1></span></section>
+    <section id="intro">
+      <p class="name">Hi, my name is <span>Naasir.</span></p>
+      <p> I create the front end of websites, user experiences, user interfaces, digital experiences, etc.
+        
+        I'm a student developer learning HTML, CSS and JavaScript.
+        
+        Currently, I'm at <a href="https://www.zoro.co.uk/">Zoro UK.</a></p>
+        <i class="fa fa-html5"></i>
+        <i class="fa fa-css3"></i>
+        <i class="fa fa-apple"></i>
+
+        
+    </section>
 </body>
 
 </html>
+</>
